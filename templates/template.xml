@@ -1,0 +1,28 @@
+<annotation>
+	<folder>Unknown</folder>
+	<filename>{{ filename }}</filename>
+	<path>Unknown</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>{{ width }}</width>
+		<height>{{ height }}</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+    {% for obj in objects %}
+    <object>
+        <name>{{ obj[0] }}</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>{{ obj[1] }}</xmin>
+            <ymin>{{ obj[2] }}</ymin>
+            <xmax>{{ obj[3] }}</xmax>
+            <ymax>{{ obj[4] }}</ymax>
+        </bndbox>
+    </object>
+    {% endfor %}
+</annotation>
