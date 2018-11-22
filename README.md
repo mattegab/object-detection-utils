@@ -42,7 +42,7 @@ Where:
 Annotations:
 - If `<input>` is a file it will process the image, 
 if it is a directory it will iterate through the files in the directory, processing each in turn
-- *template.xml* is following the labelImg structure 
+- *template.xml* is following the [labelImg](https://github.com/tzutalin/labelImg) structure 
 
 ## Example
 `python3 LabeledImageTile.py -i input/Penguins.jpg -o out/ -x 1000 -y 1000 -m 100`  
