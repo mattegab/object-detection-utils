@@ -5,7 +5,7 @@ Functions of the script:
 2. divide the image in tiles: 
  the number of tiles depends on the specified size of the tiles and the minimum overlapping the tiles might have
 3. generate the XML related to each tile,
-containing the coordinates derived from the main image bounding boxes
+containing the bounding boxes coordinates derived from the main image
 
 Graphical image annotation tool and label object bounding boxes in images: https://github.com/tzutalin/labelImg
 
@@ -20,7 +20,6 @@ https://github.com/MrPaulBrown/ibmvisualinsights/
 for the part of the script that deal with cropping an image, 
 or set of images in a directory, 
 into a set of overlapping tiled regions of the specified size, with a specified minimum overlap between tiles.
-
 
 
 ## Python version
